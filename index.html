@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+  <textarea id="mytextarea"></textarea>
+</form>
+</body>
+<script src='js/tinymce/tinymce.min.js'></script>
+<script>
+  tinymce.init({
+    selector: '#mytextarea',
+    language: 'zh-Hans',
+      plugins: 'preview importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists wordcount help charmap quickbars emoticons',
+      toolbar: 'undo redo | bold italic underline strikethrough | blocks | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor removeformat | emoticons | fullscreen  preview | insertfile image media link | lineheight',
+      quickbars_insert_toolbar : 'alignleft aligncenter alignright alignjustify',
+      menubar:false,
+      branding: false,
+      elementpath:false,
+      statusbar:false
+  });
+</script>
+
+</html>
